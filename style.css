@@ -3,39 +3,49 @@
 
     --color-black: #000;
     --color-white: #FFF;
+    --color-purple: #A582F7;
+
+    --background-color: var(--color-black);
 
     --text-color-regular: var(--color-white);
 
     --color-primary: linear-gradient(180deg, #CE9FFC 0%, #A582F7 50%, #7367F0 100%);
 
     
-    --font-family-primary: 'Plus Jakarta Sans', sans-serif;
+    --font-family-regular: 'Plus Jakarta Sans', sans-serif;
+    --font-family-lead: 'CabinetGrotesk-Black';
+    --font-family-lead-bold: 'CabinetGrotesk-Bold';
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semiBold: 600;
+    --font-weight-bold: 600;
 
     --font-size-normal: 1.8rem;
+    --font-size-ultra-large: 11.6rem;
+    --font-size-large: 3.2rem;
     --font-size-lead: 1.6rem;
 }
 
 body{
-    background: black;
+    background: var(--background-color);
     max-width: 144rem;
     width: 100%;
     min-height: 100vh;
-    margin: auto;
+    margin: 0 auto;
 }
 
+/* --- */
 /* header */
 
 header{
     display: flex;
     align-items: center;
+    gap: 6rem;
     max-width: 120rem;
     width: 100%;
-    margin: 8rem 12.3rem 0;
-    font-family: var(--font-family-primary);
+    margin: 8rem auto;
+    font-family: var(--font-family-regular);
 }
 
 /* - */
@@ -56,7 +66,7 @@ nav ul{
 }
 
 nav ul li a{
-    font-family: var(--font-family-primary);
+    font-family: var(---font-family-regular);
     font-size: var(--font-size-lead);
     font-weight: var(--font-weight-medium);
     color: var(--text-color-regular);
@@ -67,9 +77,12 @@ nav ul li a{
 
 .sign-up{
     display: flex;
+    gap: 1.6rem;
+    margin: 0 0 0 auto;
 }
 
 .sign-up button{
+    background: var(--color-primary);
     padding: 1.5rem 6rem;
     border-radius: 0.5rem;
     font-size: var(--font-size-lead);
@@ -78,6 +91,188 @@ nav ul li a{
 }
 
 .sign-up button:first-child{
-    background: var(--color-primary);
     font-weight: var(--font-weight-semiBold);
 }
+
+.sign-up button:last-child{
+    border: double 0.2rem transparent;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(var(--background-color), var(--background-color)), 
+                      var(--color-primary);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* --- */
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 18rem 0 0 0;
+    position: relative;
+}
+
+/* - */
+/* text */
+
+.banner .header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0px 140px 80px rgba(0, 0, 0, 1);
+    max-width: 120rem;
+    width: 100%;
+}
+
+
+.banner .header-text h1{
+    font-family: var(--font-family-lead);
+    text-align: center;
+    font-size: var(--font-size-ultra-large);
+    word-break: break-word;
+}
+
+.banner .header-text h1:first-child{
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.2rem white; /* EXPERIMENTAL WAY  */
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; CORRECT WAY */
+}
+
+.banner .header-text h1:first-child::before{
+    content: "One Step Closer To";
+    color: var(--text-color-regular);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1000;
+}
+
+.banner .header-text h1:nth-child(2){
+    color: var(--text-color-regular);
+    z-index: -1;
+}
+
+.banner .header-text p{
+    margin: 4.2rem 0;
+    font-family: var(--font-family-regular);
+    color: var(--text-color-regular);
+    font-size: var(--font-size-normal);
+    z-index: -100;
+    text-transform: capitalize;}
+
+/* - */
+/* button */
+
+.banner .buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.banner .buttons button:first-child{
+    background: var(--color-primary);
+    padding: 1.5rem 5rem;
+    border-radius: 0.5rem;
+    color: var(--text-color-regular);
+    font-family: var(--font-family-);
+    font-size: var(--font-size-lead);
+    font-weight: var(--font-weight-semiBold);
+}
+
+.banner .buttons button:last-child{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    border: none;
+    color: var(--text-color-regular);
+    font-family: var(--font-family-lead-bold);
+    font-size: var(--font-size-normal);
+}
+
+/* - */
+/* data */
+
+.marketing-data{
+    display: flex;
+    gap: 5rem;
+    margin: 10rem 0 16.7rem 0;
+}
+
+.marketing-data .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.marketing-data .data h4{
+    
+    font-family: var(--font-family-lead);
+    font-size: var(--font-size-large);
+    color: var(--text-color-regular);
+}
+
+.marketing-data .data p{
+    text-align: center;
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color-regular);
+}
+
+/* - */
+
+.bbg1{
+    position: absolute;
+    width: 188.2px;
+    height: 116.04px;
+    left: calc(50% - 215px/2 - 538px);
+    top: -40px; 
+    transform: rotate(-30deg);
+    z-index: -100;
+}
+
+.bbg2{
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    top: 230px;
+    left: 80px;
+    transform: rotate(-38.54deg);
+    z-index: -100;
+}
+
+.bbg3{
+    position: absolute;
+    width: 113px;
+    height: 75px;
+    top: 450px;
+    left: 160px;
+    filter: blur(3.36404px);
+    transform: rotate(-63.44deg);  
+    z-index: -100;
+}
+
+.bbg4{
+    position: absolute;
+    width: 182px;
+    height: 122px;
+    top: 345px;
+    right: 160px;
+    transform: rotate(30deg);
+    z-index: -100;
+}
+
+.bbg5{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    bottom: 50px;
+    right: 570px;
+    z-index: -100;
+}
+

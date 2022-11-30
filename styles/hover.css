@@ -1,0 +1,25 @@
+@import url(../style.css);
+
+/* nav */
+
+nav ul li a:hover{
+    color: var(--color-purple);
+}
+
+/* - */
+/* sign up */
+
+.sign-up button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}
+
+/* - */
+/* banner button */
+
+.banner .buttons button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}
