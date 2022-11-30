@@ -2,6 +2,14 @@
     font-size: 62.5%;
 
     --color-black: #000;
+    --color-white: #FFF;
+
+    --text-color-regular: var(--color-white);
+
+    --color-primary: linear-gradient(180deg, #CE9FFC 0%, #A582F7 50%, #7367F0 100%);
+
+    
+    --font-family-primary: 'Plus Jakarta Sans', sans-serif;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -27,7 +35,7 @@ header{
     max-width: 120rem;
     width: 100%;
     margin: 8rem 12.3rem 0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: var(--font-family-primary);
 }
 
 /* - */
@@ -45,4 +53,31 @@ header{
 nav ul{
     display: flex;
     gap: 3rem;
+}
+
+nav ul li a{
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-lead);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color-regular);
+}
+
+/* - */
+/* sign up */
+
+.sign-up{
+    display: flex;
+}
+
+.sign-up button{
+    padding: 1.5rem 6rem;
+    border-radius: 0.5rem;
+    font-size: var(--font-size-lead);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color-regular);
+}
+
+.sign-up button:first-child{
+    background: var(--color-primary);
+    font-weight: var(--font-weight-semiBold);
 }
