@@ -33,6 +33,7 @@ body{
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+    overflow-X: hidden;
 }
 
 /* --- */
@@ -177,7 +178,7 @@ nav ul li a{
     padding: 1.5rem 5rem;
     border-radius: 0.5rem;
     color: var(--text-color-regular);
-    font-family: var(--font-family-);
+    font-family: var(--font-family-regular);
     font-size: var(--font-size-lead);
     font-weight: var(--font-weight-semiBold);
 }
@@ -225,6 +226,7 @@ nav ul li a{
 }
 
 /* - */
+/* bg items */
 
 .bbg1{
     position: absolute;
@@ -274,4 +276,16 @@ nav ul li a{
     bottom: 50px;
     right: 570px;
     z-index: -100;
+}
+
+/* --- */
+/* sponsorship line */
+
+.sponsorship{
+    width: 100vw;
+}
+
+.sponsorship .container{
+    background: var(--color-primary);
+    
 }
