@@ -1,11 +1,48 @@
-@import url('./fonts/cabinet-grotesk.css');
-
 :root{
     font-size: 62.5%;
 
     --color-black: #000;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semiBold: 600;
+
+    --font-size-normal: 1.8rem;
+    --font-size-lead: 1.6rem;
 }
 
-/* body{
+body{
     background: black;
-} */
+    max-width: 144rem;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    max-width: 120rem;
+    width: 100%;
+    margin: 8rem 12.3rem 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* - */
+/* logo */
+
+.logo,
+.logo img{
+    width: 11.7rem;
+    height: 3.4rem;
+}
+
+/* - */
+/* nav */
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
