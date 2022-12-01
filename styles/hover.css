@@ -23,3 +23,19 @@ nav ul li a:hover{
     transition: 0.5s;
     filter: brightness(1.1);
 }
+
+/* - */
+/* sponsorship line */
+
+.sponsorship .container a:hover svg{
+    transition: 0.5s;
+    transform: translate(12px, -20px);
+}
+
+/* - */
+/* companies */
+
+.companies-container .companies-logos a:hover{
+    transition: 0.5s;
+    transform: translate(1px, -20px);
+}

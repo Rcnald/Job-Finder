@@ -200,7 +200,7 @@ nav ul li a{
 .marketing-data{
     display: flex;
     gap: 5rem;
-    margin: 10rem 0 16.7rem 0;
+    margin: 10rem 0 20.7rem 0;
 }
 
 .marketing-data .data{
@@ -273,7 +273,7 @@ nav ul li a{
     position: absolute;
     width: 96px;
     height: 96px;
-    bottom: 50px;
+    top: 600px;
     right: 570px;
     z-index: -100;
 }
@@ -283,9 +283,139 @@ nav ul li a{
 
 .sponsorship{
     width: 100vw;
+    height: 20rem;
 }
 
 .sponsorship .container{
     background: var(--color-primary);
-    
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    transform: rotate(3deg);
+}
+
+.sponsorship .container::before{
+    content: " ";
+    position: absolute;
+    background: var(--color-primary);
+    height: 14rem;
+    width: 100%;
+    transform: rotate(-3deg);
+    z-index: -10000;
+}
+
+.sponsorship .container::after{
+    content: " ";
+    position: absolute;
+    background: var(--color-primary);
+    height: 14rem;
+    width: 100%;
+    z-index: -100;
+    box-shadow: 0px 0px 250px 225px rgba(0, 0, 0, 0.32);
+}
+
+.sponsorship .container a{
+    height: 4rem;
+}
+
+/* --- */
+/* companies */
+
+.companies{
+    margin: 20rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies-container{
+    display: flex;
+    max-width: 109rem;
+    width: 100%;
+    height: 439px;
+    gap: 11.2rem;
+}
+
+/* - */
+/* logo */
+
+.companies-container .companies-logos{
+    position: relative;
+    width: 535px;
+    height: 439px;
+    display: flex;
+}
+
+.companies-container .companies-logos a{
+    position: absolute;
+}
+
+.companies-container .companies-logos a:nth-child(1){
+    top: 125px;
+    left: 78px;
+}
+
+.companies-container .companies-logos a:nth-child(2){
+    top: 293px;
+    left: 266px;
+}
+
+.companies-container .companies-logos a:nth-child(3){
+    top: 47px;
+    left: 0;
+}
+
+.companies-container .companies-logos a:nth-child(4){
+    top: 81px;
+    left: 319px;
+}
+
+.companies-container .companies-logos a:nth-child(5){
+    top: 0;
+    left: 199px;
+}
+
+.companies-container .companies-logos a:nth-child(6){
+    top: 223px;
+    left: 456px;
+}
+
+.companies-container .companies-logos a:nth-child(7){
+    top: 321px;
+    left: 31px;
+}
+
+/* - */
+/* information */
+
+.companies-container .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 443px;
+}
+
+.companies-container .information h3{
+    font-family: var(--font-family-lead);
+    font-size: 4rem;
+    color: var(--text-color-regular);
+    text-transform: capitalize;
+}
+
+.companies-container .information h3 span{
+    color: var(--color-purple);
+}
+
+.companies-container .information p{
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-normal);
+    color: var(--text-color-regular);
+}
+
+.companies-container .information button{
+    padding: 1.5rem 5rem;
+    background: var(--color-primary);
 }
