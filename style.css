@@ -324,7 +324,7 @@ nav ul li a{
 /* companies */
 
 .companies{
-    margin: 20rem 0 0 0;
+    margin: 20rem 0 20rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,6 +333,7 @@ nav ul li a{
 .companies-container{
     display: flex;
     max-width: 109rem;
+    justify-content: space-between;
     width: 100%;
     height: 439px;
     gap: 11.2rem;
@@ -343,7 +344,7 @@ nav ul li a{
 
 .companies-container .companies-logos{
     position: relative;
-    width: 535px;
+    min-width: 535px;
     height: 439px;
     display: flex;
 }
@@ -394,8 +395,8 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    max-width: 443px;
+    align-items: start;
+    gap: 2.5rem;
 }
 
 .companies-container .information h3{
@@ -407,6 +408,8 @@ nav ul li a{
 
 .companies-container .information h3 span{
     color: var(--color-purple);
+    box-shadow: inset 0 0 0 0 var(--color-purple);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .companies-container .information p{
@@ -418,4 +421,9 @@ nav ul li a{
 .companies-container .information button{
     padding: 1.5rem 5rem;
     background: var(--color-primary);
+    border-radius: 0.5rem;
+    color: var(--text-color-regular);
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-lead);
+    font-weight: var(--font-weight-semiBold);
 }
