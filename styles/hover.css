@@ -67,6 +67,11 @@ header nav ul li a:hover{
     width: 100%;
 }
 
+.jobs-grid .grid .grid-item:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+
 .jobs-grid .grid .grid-item .tags .tag:hover{
     scale: 1.1;
     transition: 0.5s;
