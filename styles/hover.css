@@ -2,7 +2,7 @@
 
 /* nav */
 
-nav ul li a:hover{
+header nav ul li a:hover{
     color: var(--color-purple);
 }
 
@@ -49,4 +49,20 @@ nav ul li a:hover{
 .companies-container .information h3 span:hover {
     box-shadow: inset 200px 0 0 0 var(--color-purple);
     color: var(--background-color);
-  }
+}
+
+/* --- */
+/* jobs grid */
+
+.jobs-grid .text-grid h3 span:hover {
+    box-shadow: inset 200px 0 0 0 var(--color-purple);
+    color: var(--background-color);
+}
+
+.jobs-grid nav ul li a:hover{
+    color: var(--text-color-regular);
+}
+
+.jobs-grid nav ul li a:hover::after{
+    width: 100%;
+}
