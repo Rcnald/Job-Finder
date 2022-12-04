@@ -4,8 +4,10 @@
     --color-black: #000;
     --color-white: #FFF;
     --color-purple: #A582F7;
+    --color-gray: #111111;
 
     --background-color: var(--color-black);
+    --background-color-items: var(--color-gray);
 
     --text-color-regular: var(--color-white);
     --text-color-notSelected: #959595;
@@ -15,6 +17,7 @@
     
     --font-family-regular: 'Plus Jakarta Sans', sans-serif;
     --font-family-lead: 'CabinetGrotesk-Black';
+    --font-family-lead-regular: 'CabinetGrotesk-Regular';
     --font-family-lead-bold: 'CabinetGrotesk-Bold';
 
     --font-weight-regular: 400;
@@ -436,6 +439,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 3.2rem;
 }
 
@@ -494,4 +498,116 @@ nav ul li a{
     bottom: -1rem;
     left: 0;
     transition: 0.5s;
+}
+
+/* - */
+/* grid */
+
+.jobs-grid .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 109rem;
+    margin: 0 0 18rem 0;
+    width: 100%;
+    gap: 2rem;
+}
+
+.jobs-grid .grid .grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 23.5rem;
+    background: var(--color-gray);
+    position: relative;
+    overflow: hidden;
+    padding: 2.2rem;
+    gap: 2.2rem;
+}
+
+/* - */
+/* tags */
+
+.jobs-grid .grid .grid-item .bg{
+    position: absolute;
+    inset: 87px 0 0 163px;
+}
+
+.jobs-grid .grid .grid-item .tags{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.jobs-grid .grid .grid-item .tags .tag{
+    border: 0.09rem solid var(--color-white);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    color: var(--text-color-regular);
+    font-family: var(--font-family-lead-regular);
+    font-size: 1.4rem;
+    user-select: none;
+}
+
+/* - */
+/* text */
+
+.jobs-grid .grid .grid-item .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: .7rem;
+}
+
+.jobs-grid .grid .grid-item .text h5{
+    font-family: var(--font-family-lead-bold);
+    font-size: 2.2rem;
+    color: var(--text-color-regular);
+}
+
+.jobs-grid .grid .grid-item .text p{
+    font-family: var(--font-family-lead-regular);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--text-color-regular);
+}
+
+/* - */
+/* applies */
+
+.jobs-grid .grid .grid-item .apply{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobs-grid .grid .grid-item .apply button{
+    padding: 1.4rem 2.7rem;
+    background: var(--color-primary);
+    border-radius: .5rem;
+    color: var(--text-color-regular);
+    font-family: var(--font-family-lead-bold);
+    font-size: 1.4rem;
+}
+
+.jobs-grid .grid .grid-item .apply .applies{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.jobs-grid .grid .grid-item .apply .applies img{
+    --size: 2.2rem;
+
+    width: var(--size);
+    height: var(--size);
+}
+
+.jobs-grid .grid .grid-item .apply .applies p{
+    font-family: var(--font-family-lead-bold);
+    font-size: 1.4rem;
+    color: var(--text-color-regular);
 }

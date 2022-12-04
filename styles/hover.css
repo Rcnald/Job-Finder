@@ -66,3 +66,15 @@ header nav ul li a:hover{
 .jobs-grid nav ul li a:hover::after{
     width: 100%;
 }
+
+.jobs-grid .grid .grid-item .tags .tag:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}
+
+.jobs-grid .grid .grid-item .apply button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}
