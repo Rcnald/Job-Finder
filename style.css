@@ -526,6 +526,7 @@ nav ul li a{
     padding: 2.2rem;
     gap: 2.2rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 /* - */
@@ -766,6 +767,7 @@ main .categories .display-categories .item{
     gap: 2.5rem;
     height: 12.8rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 main .categories .display-categories .item picture{
