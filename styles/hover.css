@@ -113,3 +113,16 @@ main .categories button:hover{
     transition: 0.5s;
     filter: brightness(1.1);
 }
+
+/* --- */
+/* sponsorship companies */
+
+.sponsorship-companies h2 span:hover{
+    box-shadow: inset 200px 0 0 0 var(--color-purple);
+    color: var(--background-color);
+}
+
+.sponsorship-companies .companies .company:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
