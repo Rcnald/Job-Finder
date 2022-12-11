@@ -944,8 +944,8 @@ main .categories button{
     gap: 2rem;
 }
 
-.information :is(.job:last-child){
-    align-items: center;
+.information :is(.job:last-child) .line:first-child{
+    margin: 0 2rem 0 0;
 }
 
 .information .first-check{
