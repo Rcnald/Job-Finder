@@ -1027,6 +1027,7 @@ main .categories button{
 
 .information label{
     user-select: none;
+    cursor: pointer;
 }
 
 .information input + label::before{
