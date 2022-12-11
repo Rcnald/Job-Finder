@@ -126,3 +126,17 @@ main .categories button:hover{
     transform: translateY(-10px);
     transition: 0.5s;
 }
+
+/* --- */
+/* information */
+
+.information .latest-information .text h3 span:hover{
+    box-shadow: inset 200px 0 0 0 var(--color-purple);
+    color: var(--background-color);
+}
+
+.information .button-inside-input button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}

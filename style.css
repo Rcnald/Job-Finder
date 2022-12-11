@@ -55,7 +55,7 @@ header{
 }
 
 body :is(section, main){
-    margin: 0 0 20rem 0;
+    margin: 0 auto 20rem auto;
 }
 
 /* - */
@@ -863,4 +863,260 @@ main .categories button{
     font-family: var(--font-family-lead-medium);
     font-size: 2.8rem;
     cursor: pointer;
+}
+
+
+/* --- */
+/* information */
+
+.information{
+    max-width: 109rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15.8rem;
+}
+
+.information .alerts{
+    max-width: 44.7rem;
+    width: 100%;
+    background: var(--color-gray);
+    padding: 4.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    border-radius: 6.3rem;
+}
+
+.information .header{
+    background: var(--color-primary);
+    max-width: 35.4rem;
+    width: 100%;
+    height: 5.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.information .menu{
+    width: 1.2rem;
+    height: .2rem;
+    background: var(--color-gray);
+    position: relative;
+}
+
+
+.information .menu::after{
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: .2rem;
+    background: var(--color-gray);
+    top: 5px;
+}
+
+.information .menu::before{
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: .2rem;
+    background: var(--color-gray);
+    top: -5px;
+}
+
+.information .photo{
+    --size: 2.9rem;
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100%;
+    background: var(--color-gray);
+}
+
+/* - */
+/* job */
+
+.information .job{
+    display: flex;
+    height: 8.3rem;
+    gap: 2rem;
+}
+
+.information :is(.job:last-child){
+    align-items: center;
+}
+
+.information .first-check{
+    display: flex;
+    align-items: center;
+}
+
+.information .second-check{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.information .second-check .line{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.information .job:nth-child(2) .second-check .line{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background: var(--color-primary);
+}
+
+.information .second-check label{
+    display: flex;
+    flex-direction: column;
+}
+
+.information .second-check label::before{
+    margin: auto 0;
+}
+
+.information .line{
+    width: 14.6rem;
+    height: 1rem;
+    background: var(--color-white);
+    border-radius: 6.2rem;
+}
+
+.information .job label{
+    display: flex;
+    align-items: center;
+}
+
+.information .job label h6{
+    margin: 0 4.4rem 0 0;
+}
+
+.information h6{
+    font-family: var(--font-family-lead-medium);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.7rem;
+    color: var(--text-color-regular);
+}
+
+.information p{
+    font-family: var(--font-family-lead-medium);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.6rem;
+    color: var(--text-color-regular);
+}
+
+
+.information :is(.job:first-child, .job:nth-child(4)){
+    transform: translateX(-70px);
+    background: var(--background-color);
+    width: 47.3rem;
+}
+
+/* - */
+/* checkbox */
+
+.information input{
+    display: none;
+}
+
+.information label{
+    user-select: none;
+}
+
+.information input + label::before{
+    --size: 2.6rem;
+
+    content: "";
+    margin: 0 2.4rem 0 0;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 0.62rem;
+    background: #1D1D1D;
+    border: 0.2rem solid #1D1D1D;
+    display: inline-block;
+}
+
+.information input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54993 5.5132L4.44629 7.9958L10.239 1.78931' stroke='%23FFFEFF' stroke-width='1.86195' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-purple);
+    border: 0;
+}
+
+/* - */
+/* latest information */
+
+.information .latest-information{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+
+.information .latest-information .text{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.information .latest-information .text h3{
+    font-family: var(--font-family-lead);
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: var(--text-color-regular);
+    line-height: 50px;
+}
+
+.information .latest-information .text h3 span{
+    color: var(--color-purple);
+    box-shadow: inset 0 0 0 0 var(--color-purple);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.information .latest-information .text p{
+    font-family: var(--font-family-regular);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-normal);
+    color: var(--text-color-regular);
+    line-height: 30px;
+}
+
+.information .button-inside-input{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 46.1rem;
+    width: 100%;
+    height: 7.8rem;
+    background: #1D1D1D;
+    border-radius: 0.5rem;
+}
+
+.information .button-inside-input input{
+    display: block;
+    flex-grow: 1;
+    background: transparent;
+    border: 0;
+    padding: 2.8rem 2.4rem;
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family-lead-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color-regular);
+}
+
+.information .button-inside-input button{
+    min-width: 13.5rem;
+    height: 60px;
+    background: var(--color-primary);
+    border-radius: 0.5rem;
+    font-family: var(--font-family-regular);
+    font-weight: var(--font-weight-semiBold);
+    font-size: var(--font-size-lead);
+    color: var(--text-color-regular);
 }
