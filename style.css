@@ -881,7 +881,7 @@ main .categories button{
     max-width: 44.7rem;
     width: 100%;
     background: var(--color-gray);
-    padding: 4.7rem;
+    padding: 4.7rem 4.7rem 2rem 4.7rem;
     display: flex;
     flex-direction: column;
     gap: 2.7rem;
