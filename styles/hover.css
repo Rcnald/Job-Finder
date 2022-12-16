@@ -140,3 +140,17 @@ main .categories button:hover{
     transition: 0.5s;
     filter: brightness(1.1);
 }
+
+/* --- */
+/* post */
+
+.post h3 span:hover{
+    box-shadow: inset 200px 0 0 0 var(--color-purple);
+    color: var(--background-color);
+}
+
+.post button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    filter: brightness(1.1);
+}
