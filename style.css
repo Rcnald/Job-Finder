@@ -54,7 +54,7 @@ header{
     font-family: var(--font-family-regular);
 }
 
-body :is(section, main){
+body :is(section, main,){
     margin: 0 auto 20rem auto;
 }
 
@@ -1266,4 +1266,96 @@ main .categories button{
 
 .post .inside picture:nth-child(5){
     right: -42px;
+}
+
+/* --- */
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 109rem;
+    width: 100%;
+}
+
+footer .information{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .logo{
+    width: 22rem;
+    height: 5rem;
+}
+
+footer .logo img{
+    width: 17rem;
+    height: 5rem;
+}
+
+footer .social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+footer .social-media h6{
+    font-family: var(--font-family-lead);
+    font-size: var(--font-size-normal);
+    color: var(--text-color-regular);
+}
+
+
+footer .media{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .media picture{
+    --size: 3.3rem;
+
+    width: var(--size);
+    height: var(--size);
+    border: 0.05rem solid var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;    
+    cursor: pointer;
+}
+
+footer svg{
+    fill: white;
+}
+
+footer .mail-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .mail-us :is(h6,p){
+    font-family: var(--font-family-lead-bold);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-normal);
+    color: var(--text-color-regular);
+    text-align: end;
+}
+
+footer hr{
+    width: 100%;
+    margin: 4rem 0 2rem 0;
+    border: 0.01rem solid #E4D8D8;
+    opacity: 0.2;
+}
+
+footer > p{
+    font-family: var(--font-family-lead-bold);
+    font-size: var(--font-size-normal);
+    color: var(--text-color-regular);
+    margin: 0 0 4rem 0;
 }
