@@ -58,6 +58,10 @@ body :is(section, main,){
     margin: 0 auto 20rem auto;
 }
 
+.landing-page{
+    width: 90%;
+}
+
 /* - */
 /* logo */
 
@@ -292,12 +296,12 @@ nav ul li a{
 
 .sponsorship{
     width: 100vw;
-    height: 20rem;
+    min-height: 20rem;
 }
 
 .sponsorship .container{
     background: var(--color-primary);
-    height: 14rem;
+    min-height: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,8 +406,8 @@ nav ul li a{
 .companies-container .information{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
+    justify-content: center;
     gap: 2.5rem;
 }
 

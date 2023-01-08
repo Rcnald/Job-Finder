@@ -1,0 +1,140 @@
+@import url(../style.css);
+
+/* sandwich menu */
+
+#mobile-menu{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+}
+
+.sign-up button:first-child svg{
+    display: none;
+}
+
+.sign-up button:last-child span{
+    display: none;
+}
+
+@media (max-width : 1100px){
+    #mobile-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 102;
+    }
+
+    #mobile-menu span{
+        background: white;
+        width: 3rem;
+        height: 0.1rem;
+        position: relative;
+        z-index: 101;
+    } 
+    
+    #mobile-menu span::after{
+        content: " ";
+        position: absolute;
+        top: -10px;
+        width: inherit;
+        height: inherit;
+        background: inherit;
+    }
+    
+    #mobile-menu span::before{
+        content: " ";
+        position: absolute;
+        top: 10px;
+        width: inherit;
+        height: inherit;
+        background: inherit;
+    }
+
+    .landing-page ul{
+        display: none;
+    }
+
+    .landing-page header{
+        justify-content: space-between;
+    }
+
+    .landing-page header nav{
+        order: 2;
+    }
+
+    .landing-page header .sign-up{
+        margin: 0;
+    }
+
+    .landing-page ul.active{
+        display: flex;
+        width: 30vw;
+        flex-direction: column;
+        background: var(--background-color);
+        padding: 10rem 0 0 5rem;
+        position: absolute;
+        z-index: 90;
+        right: 0;
+        top: 0 ;
+        transition: .5s;
+    }
+
+    .sponsorship .container::before,
+    .sponsorship .container::after{
+        min-height: 20rem;
+    }
+
+    .sponsorship .container{
+        flex-wrap: wrap;
+    }
+
+    .sponsorship .container a{
+        padding: 2rem 0 0 0;
+    }
+
+    .sponsorship .container a:last-child{
+        padding: 0 0 3rem 0;
+    }
+
+    .companies-container{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-height: 735px;
+    }
+
+    .companies-container .information{
+        align-items: center !important;
+    }
+}
+
+
+@media (max-width : 800px){
+
+    .sign-up button:first-child{
+        padding: 1rem 2.5rem;
+    }
+    .sign-up button:first-child svg{
+        display: flex;
+    }
+
+    .sign-up button:first-child p{
+        display: none;
+    }
+
+    .sign-up button:last-child{
+        padding: 1rem 2rem;
+    }
+
+    .sign-up button:last-child span{
+        display: flex;
+    }
+
+    .sign-up button:last-child p{
+        display: none;
+    }
+
+    .landing-page ul.active{
+        width: 50vw;
+    }
+}
