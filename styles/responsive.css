@@ -79,9 +79,12 @@
         transition: .5s;
     }
 
+    .sponsorship,
+    .sponsorship .container,
     .sponsorship .container::before,
     .sponsorship .container::after{
         min-height: 20rem;
+        /* display: none; */
     }
 
     .sponsorship .container{
@@ -105,6 +108,66 @@
 
     .companies-container .information{
         align-items: center !important;
+    }
+
+    .jobs-grid .grid{
+        grid-template-columns: repeat(2, 350px) !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .categories{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .categories .popular{
+        max-width: 78rem;
+        width: 100%;
+    }
+
+    .sponsorship-companies .companies{
+        flex-wrap: wrap;
+    }
+
+    .information{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .information .latest-information,
+    .information .latest-information .text{
+        align-items: center;
+    }
+
+    .post{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem !important;
+        align-items: center;
+    }
+
+    .post-area,
+    .post .text,
+    .post .text h3{
+        align-items: center;
+        text-align: center;
+    }
+
+    .post button{
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    .post .workers-circle{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    footer{
+        width: 90% !important;
     }
 }
 

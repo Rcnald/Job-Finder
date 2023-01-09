@@ -345,7 +345,7 @@ nav ul li a{
 .companies-container{
     display: flex;
     max-width: 109rem;
-    justify-content: space-between;
+    justify-content: space-between; 
     width: 100%;
     height: 439px;
     gap: 11.2rem;
@@ -690,7 +690,6 @@ main .categories .popular{
     flex-direction: column;
     padding: 4rem;
     gap: 3.2rem;
-    
 }
 
 main .categories .popular h6{
@@ -829,7 +828,7 @@ main .categories button{
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
-    min-width: 109rem;
+    max-width: 109rem;
     width: 100%;
 }
 
@@ -841,6 +840,8 @@ main .categories button{
     font-size: 4rem;
     color: var(--text-color-regular);
     text-transform: capitalize;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .sponsorship-companies h2 span{
