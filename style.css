@@ -35,6 +35,7 @@
 body{
     background: var(--background-color);
     max-width: 144rem;
+    min-width: 375px;
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
@@ -366,38 +367,38 @@ nav ul li a{
 }
 
 .companies-container .companies-logos a:nth-child(1){
-    top: 125px;
-    left: 78px;
+    top: 12.5rem;
+    left: 7.8rem;
 }
 
 .companies-container .companies-logos a:nth-child(2){
-    top: 293px;
-    left: 266px;
+    top: 29.3rem;
+    left: 26.6rem;
 }
 
 .companies-container .companies-logos a:nth-child(3){
-    top: 47px;
+    top: 4.7rem;
     left: 0;
 }
 
 .companies-container .companies-logos a:nth-child(4){
-    top: 81px;
-    left: 319px;
+    top: 8.1rem;
+    left: 31.9rem;
 }
 
 .companies-container .companies-logos a:nth-child(5){
     top: 0;
-    left: 199px;
+    left: 19.9rem;
 }
 
 .companies-container .companies-logos a:nth-child(6){
-    top: 223px;
-    left: 456px;
+    top: 22.3rem;
+    left: 45.6rem;
 }
 
 .companies-container .companies-logos a:nth-child(7){
-    top: 321px;
-    left: 31px;
+    top: 32.1rem;
+    left: 3.1rem;
 }
 
 /* - */

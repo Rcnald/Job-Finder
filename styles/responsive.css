@@ -127,6 +127,10 @@
         width: 100%;
     }
 
+    .sponsorship-companies{
+        width: 90% !important;
+    }
+
     .sponsorship-companies .companies{
         flex-wrap: wrap;
     }
@@ -169,10 +173,18 @@
     footer{
         width: 90% !important;
     }
+
+    footer .information{
+        flex-wrap: nowrap;
+    }
 }
 
 
 @media (max-width : 800px){
+
+    /* :root{
+        font-size: 60%;
+    } */
 
     .sign-up button:first-child{
         padding: 1rem 2.5rem;
@@ -199,5 +211,106 @@
 
     .landing-page ul.active{
         width: 50vw;
+    }
+
+    main .categories{
+        width: 80% !important;
+    }
+
+    .jobs-grid .grid{
+        grid-template-columns: 350px !important;
+    }
+
+    .jobs-grid nav ul{
+        display: flex;
+        min-width: auto !important;
+        justify-content: space-between;
+    }
+
+    footer > .information{
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center !important;
+        gap: 2rem !important;
+    }
+
+    footer > .information .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .mail-us :is(h6,p){
+        text-align: center !important;
+    }
+}
+
+@media (max-width : 750px){
+
+    main .categories .display-categories{
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 2rem;
+        width: 100% !important;
+    }
+
+    main .categories .display-categories .item{
+        width: inherit !important;
+
+        align-items: center;
+        justify-content: flex-start !important;
+        margin: 0 auto;
+    }
+
+    .companies-container .information{
+        align-items: center !important;
+        width: 80%;
+        text-align: center;
+    }
+
+    .information .latest-information .text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .jobs-grid .text-grid{
+        text-align: center;
+    }
+}
+
+@media (max-width : 600px){
+    :root{
+        font-size: 55.5% !important;
+    }
+
+    .companies-container .companies-logos{
+        scale: .8;
+    }
+
+    .post .workers-circle{
+        scale: .9;
+    }
+
+    .sponsorship,
+    .sponsorship .container,
+    .sponsorship .container::before,
+    .sponsorship .container::after{
+        min-height: 30rem;
+        /* display: none; */
+    }
+
+    .jobs-grid nav ul{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width : 470px){
+    :root{
+        font-size: 50.5% !important;
+    }
+
+    .companies-container .companies-logos{
+        scale: .7;
+        width: 60% !important;
     }
 }
